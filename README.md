@@ -5,7 +5,7 @@ My clean configuration for Vim
 
 Clone this repo into your home directory either as .vim
 
-        $ git clone https://github.com/rogeriobispo/my_vim_files.git
+        $ git clone https://github.com/rogeriobispo/my_vim_files.git ~/.vim
 
 Then 'cd' into the repo and run make:
 
