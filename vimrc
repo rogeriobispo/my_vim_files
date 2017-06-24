@@ -9,6 +9,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "Plugins
+Plugin 'gregsexton/matchtag'
 Plugin 'ctrlpvim/ctrlp.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'ntpeters/vim-better-whitespace'
@@ -77,6 +78,7 @@ set nobackup
 set nowb
 
 "Display tabs and trailing spaces visually
+
 set list listchars=tab:\ \ ,trail:·
 set nowrap       "Don't wrap lines
 set wrap linebreak nolist
