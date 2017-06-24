@@ -79,7 +79,6 @@ set nowb
 
 "Display tabs and trailing spaces visually
 
-set list listchars=tab:\ \ ,trail:·
 set nowrap       "Don't wrap lines
 set wrap linebreak nolist
 
@@ -135,3 +134,8 @@ endif
 "noremap <Down>  :echo "NOP!"<cr>
 "noremap <Left>  :echo "NOP!"<cr>
 "noremap <Right> :echo "NOP!"<cr>
+set clipboard=unnamed
+set list
+set listchars=tab:▸\ ,eol:¬,trail:.,space:.
+autocmd BufWritePre * %s/\s\+$//e
+
