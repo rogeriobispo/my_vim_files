@@ -33,6 +33,7 @@ Bundle 'moby/moby' , {'rtp': '/contrib/syntax/vim/'}
 Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'fatih/vim-go'
 Bundle 'vim-scripts/groovy.vim'
+Plugin 'danro/rename.vim'
 
 "General
 set encoding=utf-8
