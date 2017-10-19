@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 
 "Plugins
 Plugin 'gregsexton/matchtag'
+Plugin 'Rename2'
 Plugin 'ctrlpvim/ctrlp.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'ntpeters/vim-better-whitespace'
@@ -34,6 +35,7 @@ Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'fatih/vim-go'
 Bundle 'vim-scripts/groovy.vim'
 Plugin 'danro/rename.vim'
+Plugin 'scrooloose/nerdtree'
 
 "General
 set encoding=utf-8
