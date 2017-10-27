@@ -1,5 +1,6 @@
 "Initialize
 set nocompatible
+set mouse=a
 filetype on
 filetype off
 
@@ -141,4 +142,5 @@ set clipboard=unnamed
 set list
 set listchars=tab:▸\ ,eol:¬,trail:.,space:.
 autocmd BufWritePre * %s/\s\+$//e
+autocmd VimEnter * NERDTree
 
