@@ -144,3 +144,21 @@ set listchars=tab:▸\ ,eol:¬,trail:.,space:.
 autocmd BufWritePre * %s/\s\+$//e
 autocmd VimEnter * NERDTree
 
+
+" NERDTree show hidden
+nmap <F2> :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
+let NERDTreeIgnore = [
+  \'\.DS_Store$',
+  \'\.bundle$',
+  \'\.capistrano$',
+  \'\.git$',
+  \'\.gitkeep$',
+  \'\.keep$',
+  \'\.localized$',
+  \'\.routes$',
+  \'\.sass-cache$',
+  \'\.swo$',
+  \'\.swp$',
+  \'tags$'
+\]
