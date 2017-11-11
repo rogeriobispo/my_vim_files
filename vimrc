@@ -134,10 +134,10 @@ if exists('+colorcolumn')
 endif
 
 "disable arrow keys
-"noremap <Up>    :echo "NOP!"<cr>
-"noremap <Down>  :echo "NOP!"<cr>
-"noremap <Left>  :echo "NOP!"<cr>
-"noremap <Right> :echo "NOP!"<cr>
+noremap <Up>    :echo "NOP!"<cr>
+noremap <Down>  :echo "NOP!"<cr>
+noremap <Left>  :echo "NOP!"<cr>
+noremap <Right> :echo "NOP!"<cr>
 set clipboard=unnamed
 set list
 set listchars=tab:▸\ ,eol:¬,trail:.,space:.
