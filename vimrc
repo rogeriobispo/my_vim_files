@@ -1,6 +1,6 @@
 "Initialize
 set nocompatible
-set mouse=a
+"set mouse=a
 filetype on
 filetype off
 
