@@ -37,7 +37,7 @@ Bundle 'fatih/vim-go'
 Bundle 'vim-scripts/groovy.vim'
 Plugin 'danro/rename.vim'
 Plugin 'scrooloose/nerdtree'
-
+Plugin 'ervandew/supertab'
 "General
 set encoding=utf-8
 set number                      "add line numbers
@@ -50,6 +50,11 @@ set autoread                    "reload files changed outside vim
 set copyindent
 set laststatus=2
 set statusline=%f
+set clipboard=unnamed
+set list
+set listchars=tab:▸\ ,eol:¬,trail:.,space:.
+autocmd BufWritePre * %s/\s\+$//e
+autocmd VimEnter * NERDTree
 
 "Indentation
 set autoindent
@@ -138,11 +143,6 @@ noremap <Up>    :echo "NOP!"<cr>
 noremap <Down>  :echo "NOP!"<cr>
 noremap <Left>  :echo "NOP!"<cr>
 noremap <Right> :echo "NOP!"<cr>
-set clipboard=unnamed
-set list
-set listchars=tab:▸\ ,eol:¬,trail:.,space:.
-autocmd BufWritePre * %s/\s\+$//e
-autocmd VimEnter * NERDTree
 
 
 " NERDTree show hidden
