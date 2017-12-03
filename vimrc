@@ -144,9 +144,14 @@ noremap <Down>  :echo "NOP!"<cr>
 noremap <Left>  :echo "NOP!"<cr>
 noremap <Right> :echo "NOP!"<cr>
 
+" Window pane resizin
+nnoremap <silent> <F5> :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <F6> :exe "resize " . (winheight(0) * 2/3)<CR>
+nnoremap <silent> <F7> :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
+nnoremap <silent> <F8> :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
 
 " NERDTree show hidden
-nmap <F2> :NERDTreeToggle<CR>
+nmap  :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = [
   \'\.DS_Store$',
