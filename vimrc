@@ -145,10 +145,10 @@ noremap <Left>  :echo "NOP!"<cr>
 noremap <Right> :echo "NOP!"<cr>
 
 " Window pane resizin
-nnoremap <silent> <F5> :exe "resize " . (winheight(0) * 3/2)<CR>
-nnoremap <silent> <F6> :exe "resize " . (winheight(0) * 2/3)<CR>
-nnoremap <silent> <F7> :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
-nnoremap <silent> <F8> :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
+nnoremap <silent> <Up> :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Down> :exe "resize " . (winheight(0) * 2/3)<CR>
+nnoremap <silent> <Right> :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
+nnoremap <silent> <Left> :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
 
 " NERDTree show hidden
 nmap  :NERDTreeToggle<CR>
