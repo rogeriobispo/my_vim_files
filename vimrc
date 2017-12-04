@@ -139,10 +139,10 @@ if exists('+colorcolumn')
 endif
 
 "disable arrow keys
-noremap <Up>    :echo "NOP!"<cr>
-noremap <Down>  :echo "NOP!"<cr>
-noremap <Left>  :echo "NOP!"<cr>
-noremap <Right> :echo "NOP!"<cr>
+" noremap <Up>    :echo "NOP!"<cr>
+" noremap <Down>  :echo "NOP!"<cr>
+" noremap <Left>  :echo "NOP!"<cr>
+" noremap <Right> :echo "NOP!"<cr>
 
 " Window pane resizin
 nnoremap <silent> <Up> :exe "resize " . (winheight(0) * 3/2)<CR>
