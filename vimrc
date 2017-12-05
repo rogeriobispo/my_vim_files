@@ -143,6 +143,12 @@ endif
 " noremap <Down>  :echo "NOP!"<cr>
 " noremap <Left>  :echo "NOP!"<cr>
 " noremap <Right> :echo "NOP!"<cr>
+" search
+
+set incsearch       " Find the next match as we type the search
+set hlsearch        " Highlight searches by default
+set ignorecase      " Ignore case when searching...
+set smartcase       " ...unless we type a capital
 
 " Window pane resizin
 nnoremap <silent> <Up> :exe "resize " . (winheight(0) * 3/2)<CR>
