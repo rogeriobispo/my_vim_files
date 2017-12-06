@@ -40,7 +40,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
 "General
 set encoding=utf-8
-set number                      "add line numbers
+set relativenumber                      "add line numbers
 set backspace=indent,eol,start  "allow backspace in insert mode
 set history=1000                "store lots of :cmdline history
 set showcmd                     "show incomplete cmds down the bottom
