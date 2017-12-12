@@ -41,6 +41,7 @@ Plugin 'ervandew/supertab'
 "General
 set encoding=utf-8
 set relativenumber                      "add line numbers
+set number
 set backspace=indent,eol,start  "allow backspace in insert mode
 set history=1000                "store lots of :cmdline history
 set showcmd                     "show incomplete cmds down the bottom
