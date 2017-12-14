@@ -158,7 +158,7 @@ nnoremap <silent> <Right> :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
 nnoremap <silent> <Left> :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
 
 " NERDTree show hidden
-nmap  :NERDTreeToggle<CR>
+nmap <F2> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = [
   \'\.DS_Store$',
