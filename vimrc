@@ -38,6 +38,7 @@ Bundle 'vim-scripts/groovy.vim'
 Plugin 'danro/rename.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
+Plugin 'kchmck/vim-coffee-script'
 "General
 set encoding=utf-8
 set relativenumber                      "add line numbers
