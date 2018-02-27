@@ -39,6 +39,7 @@ Plugin 'danro/rename.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'm4r7inp/vim-inky'
 "General
 set encoding=utf-8
 set relativenumber                      "add line numbers
