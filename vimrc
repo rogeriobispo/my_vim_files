@@ -39,6 +39,7 @@ Plugin 'danro/rename.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'ekalinin/dockerfile.vim'
 Plugin 'm4r7inp/vim-inky'
 "General
 set encoding=utf-8
@@ -142,22 +143,22 @@ if exists('+colorcolumn')
 endif
 
 "disable arrow keys
-" noremap <Up>    :echo "NOP!"<cr>
-" noremap <Down>  :echo "NOP!"<cr>
-" noremap <Left>  :echo "NOP!"<cr>
-" noremap <Right> :echo "NOP!"<cr>
-" search
+noremap <Up>    :echo "NOP!"<cr>
+noremap <Down>  :echo "NOP!"<cr>
+noremap <Left>  :echo "NOP!"<cr>
+noremap <Right> :echo "NOP!"<cr>
 
+"search
 set incsearch       " Find the next match as we type the search
 set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
 " Window pane resizin
-nnoremap <silent> <Up> :exe "resize " . (winheight(0) * 3/2)<CR>
-nnoremap <silent> <Down> :exe "resize " . (winheight(0) * 2/3)<CR>
-nnoremap <silent> <Right> :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
-nnoremap <silent> <Left> :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
+" nnoremap <silent> <Up> :exe "resize " . (winheight(0) * 3/2)<CR>
+" nnoremap <silent> <Down> :exe "resize " . (winheight(0) * 2/3)<CR>
+" nnoremap <silent> <Right> :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
+" nnoremap <silent> <Left> :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
 
 " NERDTree show hidden
 nmap <F2> :NERDTreeToggle<CR>
