@@ -41,6 +41,7 @@ Plugin 'ervandew/supertab'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'ekalinin/dockerfile.vim'
 Plugin 'm4r7inp/vim-inky'
+Plugin 'simeji/winresizer'
 "General
 set encoding=utf-8
 set relativenumber                      "add line numbers
@@ -55,8 +56,8 @@ set copyindent
 set laststatus=2
 set statusline=%f
 set clipboard=unnamed
-set list
 set listchars=tab:▸\ ,eol:¬,trail:.,space:.
+set list
 autocmd BufWritePre * %s/\s\+$//e
 autocmd VimEnter * NERDTree
 
