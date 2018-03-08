@@ -94,7 +94,7 @@ set nowb
 "Display tabs and trailing spaces visually
 
 set nowrap       "Don't wrap lines
-set wrap linebreak nolist
+set wrap linebreak
 
 "Folds
 set foldmethod=indent
@@ -112,6 +112,12 @@ set sidescrolloff=15
 set sidescroll=1
 
 "Color scheme
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
+
 "if $COLORTERM == 'gnome-terminal'
 "  set term=gnome-256color
 "  set background=light
