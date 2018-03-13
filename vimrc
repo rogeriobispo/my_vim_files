@@ -10,6 +10,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "Plugins
+Plugin 'thoughtbot/vim-rspec'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'gregsexton/matchtag'
 Plugin 'Rename2'
@@ -43,6 +44,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'ekalinin/dockerfile.vim'
 Plugin 'm4r7inp/vim-inky'
 Plugin 'simeji/winresizer'
+
 "General
 set encoding=utf-8
 set relativenumber                      "add line numbers
@@ -119,18 +121,6 @@ else
   set background=dark
 endif
 
-"if $COLORTERM == 'gnome-terminal'
-"  set term=gnome-256color
-"  set background=light
-"  colorscheme molokai
-"else
-"  if $TERM == 'xterm'
-"    set term=xterm-256color
-"    set background=dark
-"    colorscheme solarized
-"  endif
-"endif
-
 "map to bufexplorer
 nnoremap <leader>b :BufExplorer<cr>
 
@@ -161,12 +151,21 @@ set incsearch       " Find the next match as we type the search
 set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
+"rvm comand rspec
+"let g:rspec_command = "!rspec -fd {spec}"
 
-" Window pane resizin
-" nnoremap <silent> <Up> :exe "resize " . (winheight(0) * 3/2)<CR>
-" nnoremap <silent> <Down> :exe "resize " . (winheight(0) * 2/3)<CR>
-" nnoremap <silent> <Right> :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
-" nnoremap <silent> <Left> :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
+" docker command change when necessary
+let g:rspec_command = "!docker-compose run --rm website rspec -fd {spec}"
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+"Rubocop keymap
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
 
 " NERDTree show hidden
 nmap <F2> :NERDTreeToggle<CR>
