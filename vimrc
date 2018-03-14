@@ -156,6 +156,7 @@ set smartcase       " ...unless we type a capital
 
 " docker command change when necessary
 let g:rspec_command = "!docker-compose run --rm website rspec -fd {spec}"
+let g:vimrubocop_rubocop_cmd = "docker-compose run --rm --no-deps website rubocop"
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
