@@ -10,6 +10,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "Plugins
+Plugin 'airblade/vim-gitgutter'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'gregsexton/matchtag'
