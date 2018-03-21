@@ -14,6 +14,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'thoughtbot/vim-rspec'
 "Plugin 'ngmy/vim-rubocop' will use my version for testing time
 Plugin 'rogeriobispo/vim-rubocop'
+Plugin 'yggdroot/indentline'
 Plugin 'gregsexton/matchtag'
 Plugin 'Rename2'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -72,6 +73,10 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
+"plugin indetention lines
+let g:indentLine_color_term = 239
+let g:indentLine_bgcolor_term = 202
+let g:indentLine_char = '|'
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
