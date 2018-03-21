@@ -12,7 +12,8 @@ Bundle 'gmarik/vundle'
 "Plugins
 Plugin 'airblade/vim-gitgutter'
 Plugin 'thoughtbot/vim-rspec'
-Plugin 'ngmy/vim-rubocop'
+"Plugin 'ngmy/vim-rubocop' will use my version for testing time
+Plugin 'rogeriobispo/vim-rubocop'
 Plugin 'gregsexton/matchtag'
 Plugin 'Rename2'
 Plugin 'ctrlpvim/ctrlp.vim'
