@@ -47,6 +47,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'ekalinin/dockerfile.vim'
 Plugin 'm4r7inp/vim-inky'
 Plugin 'simeji/winresizer'
+Plugin 'gcmt/taboo.vim'
 
 "General
 set encoding=utf-8
@@ -159,11 +160,12 @@ set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 "rvm comand rspec
-"let g:rspec_command = "!rspec -fd {spec}"
+let g:rspec_command = "!rspec -fd {spec}"
+let g:vimrubocop_rubocop_cmd = "rubocop"
 
 " docker command change when necessary
-let g:rspec_command = "!docker-compose run --rm website rspec -fd {spec}"
-let g:vimrubocop_rubocop_cmd = "docker-compose run --rm --no-deps website rubocop"
+"let g:rspec_command = "!docker-compose run --rm website rspec -fd {spec}"
+"let g:vimrubocop_rubocop_cmd = "docker-compose run --rm --no-deps website rubocop"
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
