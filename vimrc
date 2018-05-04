@@ -36,7 +36,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/emmet-vim'
-Bundle 'moby/moby' , {'rtp': '/contrib/syntax/vim/'}
 Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'fatih/vim-go'
 Bundle 'vim-scripts/groovy.vim'
@@ -48,6 +47,7 @@ Plugin 'ekalinin/dockerfile.vim'
 Plugin 'm4r7inp/vim-inky'
 Plugin 'simeji/winresizer'
 Plugin 'gcmt/taboo.vim'
+Plugin 'zeke/moby'
 
 "General
 set encoding=utf-8
