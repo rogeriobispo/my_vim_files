@@ -48,7 +48,6 @@ Plugin 'm4r7inp/vim-inky'
 Plugin 'simeji/winresizer'
 Plugin 'gcmt/taboo.vim'
 Plugin 'zeke/moby'
-Plugin 'astashov/vim-ruby-debugger'
 
 "General
 set encoding=utf-8
