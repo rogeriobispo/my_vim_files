@@ -10,6 +10,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "Plugins
+Plugin 'victorfeijo/binding-pry-vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'thoughtbot/vim-rspec'
 "Plugin 'ngmy/vim-rubocop' will use my version for testing time
