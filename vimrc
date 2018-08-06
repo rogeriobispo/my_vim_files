@@ -69,7 +69,7 @@ set listchars=tab:▸\ ,eol:¬,trail:.,space:.
 set list
 autocmd BufWritePre * %s/\s\+$//e
 autocmd VimEnter * NERDTree
-
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 "Indentation
 set autoindent
 set smartindent
