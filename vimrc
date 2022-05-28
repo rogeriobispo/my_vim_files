@@ -13,7 +13,6 @@ Bundle 'gmarik/vundle'
 Plugin 'victorfeijo/binding-pry-vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'thoughtbot/vim-rspec'
-"Plugin 'ngmy/vim-rubocop' will use my version for testing time
 Plugin 'rogeriobispo/vim-rubocop'
 Plugin 'yggdroot/indentline'
 Plugin 'gregsexton/matchtag'
@@ -50,6 +49,8 @@ Plugin 'simeji/winresizer'
 Plugin 'gcmt/taboo.vim'
 Plugin 'zeke/moby'
 Plugin 'keith/rspec.vim'
+Plugin 'github/copilot.vim'
+Plugin 'mattn/emmet-vim'
 
 "General
 set encoding=utf-8
@@ -65,7 +66,6 @@ set copyindent
 set laststatus=2
 set statusline=%f
 set clipboard=unnamed
-set listchars=tab:▸\ ,eol:¬,trail:.,space:.
 set list
 autocmd BufWritePre * %s/\s\+$//e
 autocmd VimEnter * NERDTree
@@ -77,9 +77,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 "plugin indetention lines
-let g:indentLine_color_term = 239
-let g:indentLine_bgcolor_term = 202
-let g:indentLine_char = '|'
+"let g:indentLine_color_term = 239
+"let g:indentLine_bgcolor_term = 202
+"let g:indentLine_char = '|'
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -146,9 +146,9 @@ let g:syntastic_enable_signs=1
 nmap <leader>t :tabnew<CR>
 
 "column limit 80 chars
-if exists('+colorcolumn')
-  set colorcolumn=80
-endif
+"if exists('+colorcolumn')
+"  set colorcolumn=80
+"endif
 
 "disable arrow keys
 noremap <Up>    :echo "NOP!"<cr>
