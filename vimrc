@@ -50,7 +50,6 @@ Plugin 'gcmt/taboo.vim'
 Plugin 'zeke/moby'
 Plugin 'keith/rspec.vim'
 Plugin 'github/copilot.vim'
-Plugin 'mattn/emmet-vim'
 
 "General
 set encoding=utf-8
