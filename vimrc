@@ -179,7 +179,7 @@ let g:vimrubocop_keymap = 0
 nmap <Leader>r :RuboCop<CR>
 
 " NERDTree show hidden
-nmap <F2> :NERDTreeToggle<CR>
+nmap <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = [
   \'\.DS_Store$',
